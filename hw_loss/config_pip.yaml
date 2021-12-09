@@ -1,0 +1,19 @@
+dataset_params:
+  dataset: null
+model_params:
+  model: embed
+  emb_dim: 10
+  num_layer: 28
+  num_op_per_layer: 8
+  dropout : 0.5
+train_params:
+  num_runs: 1
+  dir_log: hw_loss/
+  dir_ckpts: dnas/DARTS/
+  batch_size: 128
+  epochs: 30
+  lr: 0.0001
+  wd: 0.01
+  optimizer: adam
+  criterion: l1
+  exp_name: pip
